@@ -4,81 +4,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página - Mód I - Primeiros Passos com HTML</title>
+    <title>Página - Mód. I - Primeiros Passos com HTML</title>
     <!-- //Desafio: Criar uma página web básica com Html -->
 
 </head>
 
 <body>
-    <h1 id="inicio">Módulo 1 - Primeiros Passos com HTML</h1>
-    <hr />
+    <div class="topico-1">
+        
+        <h1 id="inicio">Módulo 1 - Primeiros Passos com HTML</h1>
+        <hr/>
 
-    <h2>Índice</h2>
-    <ul>
-        <li><a href="#estrutura-html"> Estrutura do HTML</a></li>
-        <li><a href="#sobre-tags">Sobre as Tags</a></li>
-        <li><a href="#voltar">Botão de Voltar</a></li>
-        <li><a href="#referencias">Referencias</a></li>
-    </ul>
+        <h3>01 - Comunicação Client x Server</h3>
+        <p>
+            <h4>1.1 - História da Web</h4>
+            Neste primeiro tópico o Profº Diogo Mainardes se apresenta, fala como será o curso, faz um resumo histórico a
+            repeito da criação dos primeiros computadores, como surgiu a internet e principais nomes.
+            <br />
+            
+            <h4>1.2 - Sobre Clients</h4>
+            O tópico aborda o conceito de Client e seu funcionamento, o que são e como funcionam os navegadores (browsers), o
+            que são aplicações web e dispositivos móveis.
+            
+            <br />
+            
+            <h4>1.3 - Sobre Servers</h4>
+            Neste é abordado o conceito do que são Servers, como funcionam o software e hardware nos servidores, os tipos de
+            servidores, e fala sobre a hospedagem de sites, seu funcionamento e importância.
+            
+            <br />
+            
+            <h4>1.4 - Linguagens de Programação</h4>
+            Explicou o que é uma linguagem de programação, como ela funciona do lado do client e do lado server, finaliza
+            falando sobre o que é HTML. </p>
+        </div>
+       <br/>
+    
+    <div class="topico-2">
+        <p>
+        <h3>02 - Introd. ao HTML na prática</h3>
+        <h4>2.1 - Introdução HTML na prática</h4>
+        Neste módulo é apresentado o curso, fala sobre as ferramenta Visual Studio Code, como usá-la. Explica como é importante usar o "Inspetor de Elementos" nos navegadores.      
+        <br/>
+                
+        <h5>Estrutura Básica do HTML</h5>
+                
+        < html>< /html> - Esta tag é o elemento da estrutura do HTML;
+        <br/>
+        < head>< /head> - Tag que delimita o cabeçalho do documento. Não possui nenhum valor visível, porém ela
+            transmiti ao navegador várias informações úteis e importante para uma boa apresentação do seu documento HTML;
+        <br/>
+        < title>< /title> - Tag que define o título da página, o nome que aparecerá na aba, janela ou guia;
+        <br/>
+        < body>< /body> - Tag que representa o corpo do documento. Nessa tag que todos os elementos visíveis do site devem ser inseridos.
+        <br/>
+        <br/>
+                
+        <h4>2.2 - Sobre as Tags</h4>
+        São usadas para informar ao navegadora estrutura do site. Em suma, quando se escreve um código em HTML, as tags serão interpretadas pelo navegador produzindo a estrutura e o conteúdo visual da página, como por exemplo:
+        <br/>
+        < i>< /i> - Transforma a fonte em <i>itálico</i>;
+        <br/>
+        < strong>< /strong> - Transforma a fonte em <strong>negrito</strong>.       
+        <br/>
+                
+        <h5>Exemplo de tags sem fechamento</h5>
+        < input type="texto"> - Define um campo que receberá qualquer caractere;
+        <br/>
+        < img> - Utilizada para inserir imagem.
+        <br/>
+                
+        <h5>Os atributos das Tags</h5>
+        - Eles são propriedades das tags:
+        <br/>
+        id="..." - Atribui um id ao elemento (um id deve ser único, ou seja, atribuído a um único elemento);
+        <br/>
+        style="..." - Permite incluir elementos CSS (estilos) dentro da tag;
+        <br/>
+        input type="text" - Define um campo que receberá qualquer caractere;
+        <br/>
+        input type="number" - Define um campo que receberá apenas valor numérico;
+        <br/>
+        input type="color" - Define um campo que receberá uma cor;
+        <br/>
+        img src="..." - A partir dessa tag, o atributo src="..." deve ser digitado o caminho em que a imagem se encontra;
+        <br/>img width="..." src="..." - Define uma largura para a imagem;
+        <br/>
+        img height="..." src="..." - Define uma altura para a imagem.
+        <br/>
+                
+        <h5>Tags de texto</h5>
+        - Definem o tamanho do título, sendo < h1> a maior e < h6> a menor:
+        <br/>
+        <h1>Exemplo</h1>
+        <h2>Exemplo</h2>
+        <h3>Exemplo</h3>
+        <h4>Exemplo</h4>
+        <h5>Exemplo</h5>
+        <h6>Exemplo</h6>
+                
+        <br/>
+         
+        <h5>Outras Tags</h5>
+        < blockquote>< /bloquete> - tag utilizada para citação em umtexto; <br/>
+                
+        < mark>< /mark> - tag que define o texto que deve ser <mark>marcado ou destacado</mark>. <br/>
+                    
+        < hr> - tag define uma quebra temática em uma página HTML (por exemplo, uma mudança de tópico).<br/>
+                    
+        < sub>< /sub> - tag define o texto subscrito. O texto subscrito aparece meio caractere abaixo da linha normal e, às vezes, é renderizado em uma fonte menor. O texto subscrito pode ser usado para fórmulas químicas, como <mark>H<sub>2</sub>O</mark>.<br/>
+                    
+        < sup>< /sup> - tag define o texto sobrescrito. O texto sobrescrito aparece meio caractere acima da linha normal e, às vezes, é renderizado em uma fonte menor. O texto sobrescrito pode ser usado para notas de rodapé, como <mark> WWW<sup>[1]</sup></mark>.<br/>
+                    
+        < small>< /small> - tag define um texto menor <mark>  <small>(como direitos autorais e outros comentários laterais)</small></mark>.<br/>
+        <br/>                
+        <h5>Lista Ordenadas e Não Ordenadas</h5>
+                        
+        < ol>< /ol> - Define uma lista Ordenadas;<br/>
+        < ul>< /ul> - Define uma lista não-ordenada;<br/>
+        < li>< /li> - Define um item de lista.<br />              
+        <br />
+                        
+    </div>
 
+    <div> 
+        <h5>Links</h5>
+        < nav></ nav> - Essa tag define um conteúdo de navegação. Portanto, é muito utilizado em conjunto com listas e na criação de menus;
+        <a href="url">Exemplo</a> - No HTML, os links são definidos pela tag <a>. Dentro dessa tag incluímos o atributo href (Hypertext Reference), 
+        que é o endereço de destino do link. Dentro do conteúdo da tag, incluímos o texto ou elemento que servirá como redirecionador, ou seja, que ao ser clicado, executará a função de redirecionar para o endereço dentro do atributo href.
+        <br/>
 
-    <h2 id="estrutura-html">Estrutura do Html</h2>
-    <small><a href="#inicio">Voltar</a></small>
-    <p>A estrutura do Html é composta por três partes:
-    <ol>
-        <li>Html</li>
-        <li>Head</li>
-        <li>Body</li>
-    </ol>
-    </p>
-    <p> Essa estrutura tem uma relação muito bem definida entre si. O Html marca toda a página, dentro dele fica o head
-        (cabeçalho da página) e o body (corpo da página). Detalhe importante na dinamica de marcação é que cada parte é
-        envolvida pelo sinal de < e > (menor e maior). </p>
-    <p> Quando usa os sinais de <"Nome"> abre a sentença e quando usa < /"Nome"> fecha a sentença.</p>
-
-
-    <h2 id="sobre-tags">Sobre as Tags</h2>
-    <small><a href="#inicio">Voltar</a></small>
-    <p>Tags importantes:
-    <ol>
-        <li>i - formatação italico</li>
-        <li> strong - formatação negrito</li>
-        <li>u - formatação sublinhado</li>
-    </ol>
-    <ul>
-        <li>Italico: <i>exemplo</i></li>
-        <li>Negrito: <strong>exemplo</strong></li>
-        <li>Sublinhado: <u>exemplo</u></li>
-        <li>Combinação de italico, negrito e sublinhado: <strong><i><u>exemplo</u></i></strong></li>
-
-    </ul>
-
-    <P>Sintaxe do exemplo em italico: < i>exemplo< / i>
-    </P>
-    <P>Sintaxe do exemplo em negrito: < strong>exemplo< / strong>
-    </P>
-    <p>Sintaxe do exemplo sublinhado: < u>exemplo < / u>
-    </p>
-    <p>Sintaxe da combinação dos exemplos: < strong>
-            < i>
-                < u>exemplo< / u>
-                        < / i>
-                            < / strong>
-    </p>
-
-    </p>
-
-    <h2 id="voltar">Botão de Voltar</h2>
-    <small><a href="#inicio">Voltar</a></small>
-    <p>Para fazer o botão de voltar usa-se a tag <strong>small</strong>, e tag <strong>a</strong></p>
-    <p>A sintaxe fica assim:
-        <p>< small > < a href = " inicio "> Voltar < /a > < /small></p>
-    </p>
-
-
-    <h2 id="referencias">Links de referências</h2>
-    <small><a href="#inicio">Voltar</a></small>
-
+        <h5>Atributo Target</h5>
+        Assim como o href, também podemos incluir o atributo target dentro da tag <a>,que informa ao navegador como o redirecionamento deverá ocorrer, 
+        abrindo a página na mesma janela/aba do navegador ou abrindo uma nova janela/aba.
+            
+        _blank - abre a página em uma nova janela/aba;
+        _self - abre a página na mesma janela.
+        <br/>  
+        
+    </div>
+                        
+   
 </body>
 
 </html>
+<br>
+
+<h6>Texto das tags readaptado dos sites:</h6>
+<a href="https://www.homehost.com.br/blog/tutoriais/tags-html" target="blank">Homehost</a>
+<a href="https://www.w3schools.com/html/default.asp" target="blank">W3Schools</a>
